@@ -1,0 +1,9 @@
+{
+  "company": "BenchSci",
+  "title": "Evidence Drift Ledger",
+  "test_command": "python -m unittest -v",
+  "demo_command": "python ledger.py",
+  "scope": "Immutable synthetic source-span dependencies and authored update rules; no biological truth inference",
+  "implemented": true,
+  "integration_status": "unverified"
+}

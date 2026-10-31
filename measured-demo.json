@@ -1,0 +1,762 @@
+{
+  "schema_version": 1,
+  "data": "authored synthetic; no patient/experimental measurements",
+  "cases": {
+    "contradiction": {
+      "document": "synthetic-study",
+      "from_version": 1,
+      "to_version": 2,
+      "classification": "authored structured claims; no biological truth inference",
+      "decisions": [
+        {
+          "decision": "experiment-A",
+          "status": "contradicted",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "contradicted",
+              "reason": "declared polarity reversed in the same context",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "5d8f2e286bde16a9a8b6f3386fda01a12248da31c9878ed4767f28a099645c66",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 inhibits growth in cell-A."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "experiment-B",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "5d8f2e286bde16a9a8b6f3386fda01a12248da31c9878ed4767f28a099645c66",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "combined",
+          "status": "contradicted",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "contradicted",
+              "reason": "declared polarity reversed in the same context",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "5d8f2e286bde16a9a8b6f3386fda01a12248da31c9878ed4767f28a099645c66",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 inhibits growth in cell-A."
+              }
+            },
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "5d8f2e286bde16a9a8b6f3386fda01a12248da31c9878ed4767f28a099645c66",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "removed": {
+      "document": "synthetic-study",
+      "from_version": 1,
+      "to_version": 2,
+      "classification": "authored structured claims; no biological truth inference",
+      "decisions": [
+        {
+          "decision": "experiment-A",
+          "status": "stale",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "stale",
+              "reason": "cited claim removed",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": null
+            }
+          ]
+        },
+        {
+          "decision": "experiment-B",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "combined",
+          "status": "stale",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "stale",
+              "reason": "cited claim removed",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": null
+            },
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "condition": {
+      "document": "synthetic-study",
+      "from_version": 1,
+      "to_version": 2,
+      "classification": "authored structured claims; no biological truth inference",
+      "decisions": [
+        {
+          "decision": "experiment-A",
+          "status": "review-required",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "review-required",
+              "reason": "entity, condition or predicate changed/missing",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "ba589a130e7ee435bf70d9b4325c07f8bb354046ed7b804c95d9436b57cc76d0",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-C."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "experiment-B",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "ba589a130e7ee435bf70d9b4325c07f8bb354046ed7b804c95d9436b57cc76d0",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "combined",
+          "status": "review-required",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "review-required",
+              "reason": "entity, condition or predicate changed/missing",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "ba589a130e7ee435bf70d9b4325c07f8bb354046ed7b804c95d9436b57cc76d0",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-C."
+              }
+            },
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "ba589a130e7ee435bf70d9b4325c07f8bb354046ed7b804c95d9436b57cc76d0",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "missing-context": {
+      "document": "synthetic-study",
+      "from_version": 1,
+      "to_version": 2,
+      "classification": "authored structured claims; no biological truth inference",
+      "decisions": [
+        {
+          "decision": "experiment-A",
+          "status": "review-required",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "review-required",
+              "reason": "entity, condition or predicate changed/missing",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "33cedc12b17bf1f0c9dad6fa00722278194845e88eb0f5de8576b8331f040aea",
+                "span": [
+                  0,
+                  22
+                ],
+                "quote": "MAPK1 supports growth."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "experiment-B",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "33cedc12b17bf1f0c9dad6fa00722278194845e88eb0f5de8576b8331f040aea",
+                "span": [
+                  23,
+                  54
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "combined",
+          "status": "review-required",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "review-required",
+              "reason": "entity, condition or predicate changed/missing",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "33cedc12b17bf1f0c9dad6fa00722278194845e88eb0f5de8576b8331f040aea",
+                "span": [
+                  0,
+                  22
+                ],
+                "quote": "MAPK1 supports growth."
+              }
+            },
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "33cedc12b17bf1f0c9dad6fa00722278194845e88eb0f5de8576b8331f040aea",
+                "span": [
+                  23,
+                  54
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "synonym": {
+      "document": "synthetic-study",
+      "from_version": 1,
+      "to_version": 2,
+      "classification": "authored structured claims; no biological truth inference",
+      "decisions": [
+        {
+          "decision": "experiment-A",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "a8f5bbb766690a083736c2e569f2afbc1dfddeb203b62dc1015cc69fc5ff5c33",
+                "span": [
+                  0,
+                  31
+                ],
+                "quote": "ERK2 supports growth in cell-A."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "experiment-B",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "a8f5bbb766690a083736c2e569f2afbc1dfddeb203b62dc1015cc69fc5ff5c33",
+                "span": [
+                  32,
+                  63
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "combined",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "a8f5bbb766690a083736c2e569f2afbc1dfddeb203b62dc1015cc69fc5ff5c33",
+                "span": [
+                  0,
+                  31
+                ],
+                "quote": "ERK2 supports growth in cell-A."
+              }
+            },
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "a8f5bbb766690a083736c2e569f2afbc1dfddeb203b62dc1015cc69fc5ff5c33",
+                "span": [
+                  32,
+                  63
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "formatting": {
+      "document": "synthetic-study",
+      "from_version": 1,
+      "to_version": 2,
+      "classification": "authored structured claims; no biological truth inference",
+      "decisions": [
+        {
+          "decision": "experiment-A",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "a59ad786da491cdd01df1c3d170c64755a5ee1a4eb14ba934562651236d82060",
+                "span": [
+                  0,
+                  34
+                ],
+                "quote": "MAPK1  supports  growth in cell-A."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "experiment-B",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "a59ad786da491cdd01df1c3d170c64755a5ee1a4eb14ba934562651236d82060",
+                "span": [
+                  35,
+                  68
+                ],
+                "quote": "TP53  supports  arrest in cell-B."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "combined",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "a59ad786da491cdd01df1c3d170c64755a5ee1a4eb14ba934562651236d82060",
+                "span": [
+                  0,
+                  34
+                ],
+                "quote": "MAPK1  supports  growth in cell-A."
+              }
+            },
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "a59ad786da491cdd01df1c3d170c64755a5ee1a4eb14ba934562651236d82060",
+                "span": [
+                  35,
+                  68
+                ],
+                "quote": "TP53  supports  arrest in cell-B."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "unchanged": {
+      "document": "synthetic-study",
+      "from_version": 1,
+      "to_version": 2,
+      "classification": "authored structured claims; no biological truth inference",
+      "decisions": [
+        {
+          "decision": "experiment-A",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "experiment-B",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        },
+        {
+          "decision": "combined",
+          "status": "unchanged",
+          "dependencies": [
+            {
+              "claim": "c1",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              },
+              "after": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  0,
+                  32
+                ],
+                "quote": "MAPK1 supports growth in cell-A."
+              }
+            },
+            {
+              "claim": "c2",
+              "status": "unchanged",
+              "reason": "same declared claim/context and normalized cited span",
+              "before": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              },
+              "after": {
+                "sha256": "687653e061ad8afc0bed523d816dcf7ef048a8490a2a59b820e3e83e5eb1ec6e",
+                "span": [
+                  33,
+                  64
+                ],
+                "quote": "TP53 supports arrest in cell-B."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
